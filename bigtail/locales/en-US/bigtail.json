@@ -1,0 +1,12 @@
+{
+    "bigtail": {
+        "label": {
+            "nodelabel": "Big Tail",
+            "name": "Name",
+
+            "size": "last payloads",
+            "size_number": "number of payloads",
+            "add_cr": "add \\n to each payload"
+        }
+    }
+}
