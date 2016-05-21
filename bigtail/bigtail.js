@@ -64,6 +64,7 @@ module.exports = function(RED) {
       };
 
       outstream._flush = function(done) {
+        if (buffer.length == 0) return done();
         this.push(buffer.join(''));
         done();
       };
