@@ -1,6 +1,6 @@
 # node-red-contrib-bigtail
 
-"Tail" for Big Nodes. This nodes captures several payloads and build a buffer of the last needed messages with or not size limit
+"Tail" for Big Nodes. This node captures several payloads and build a buffer of the last needed messages with or not size limit
 
 ![alt tag](https://cloud.githubusercontent.com/assets/18165555/15455823/d4666a48-205f-11e6-8a46-a508159a5475.png)
 
@@ -41,12 +41,12 @@ When it receives a ending control message, it sends its output as a single messa
 { "control": { "state": "end" }}
 ```
 
-If no control message is given, it acts as a pass-through sending all messages it receives.
+If **no** control message is given, it acts as a pass-through sending all messages it receives.
 
 It has two options:
 
 * **number of payloads**. If set, the node will store only the **last** messages it receives
-* **size in Kb**. If set, the node will store no more than the specified size
+* **size in Kb**. If set, the node will store **no more** than the specified size
 
 ## Dependencies
 
