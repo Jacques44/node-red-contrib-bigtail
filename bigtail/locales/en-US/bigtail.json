@@ -6,7 +6,9 @@
 
             "size": "last payloads",
             "size_number": "number of payloads",
-            "add_cr": "add \\n to each payload"
+            "add_cr": "add \\n to each payload",
+            "size_kbyte": "limit in size",
+            "size_kbyte_number": "size in Kb"
         }
     }
 }

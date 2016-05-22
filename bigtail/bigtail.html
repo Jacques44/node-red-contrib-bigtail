@@ -21,9 +21,14 @@
 <script type="text/x-red" data-template-name="bigtail">
    
   <div class="form-row">
-       <label for="node-input-size"><i class="fa fa-file"></i> <span data-i18n="bigtail.label.size"></span></label>
+       <label for="node-input-size"><i class="fa fa-flask"></i> <span data-i18n="bigtail.label.size"></span></label>
        <input type="text" id="node-input-size" data-i18n="[placeholder]bigtail.label.size_number">
   </div>  
+
+  <div class="form-row">
+       <label for="node-input-size_kbyte"><i class="fa fa-flask"></i> <span data-i18n="bigtail.label.size_kbyte"></span></label>
+       <input type="text" id="node-input-size_kbyte" data-i18n="[placeholder]bigtail.label.size_kbyte_number">
+  </div>   
 
   <div class="form-row">
       <label>&nbsp;</label>
@@ -48,14 +53,15 @@
         defaults: {               // defines the editable properties of the node
             name: {value:""},     //  along with default values.
             size: { value: "" },
-            add_cr: { value: false }
+            add_cr: { value: false },
+            size_kbyte: { value: "" }
         },
 
         inputs:1,               // set the number of inputs - only 0 or 1
         outputs:2,              // set the number of outputs - 0 to n
 
         // set the icon (held in icons dir below where you save the node)
-        icon: "debug.png",      // saved in  icons/myicon.png
+        icon: "tail.png",      // saved in  icons/myicon.png
 
         label: function() {
             return this.name||this.filename||this._("bigtail.label.nodelabel");
