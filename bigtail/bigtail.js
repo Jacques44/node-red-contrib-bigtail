@@ -55,6 +55,7 @@ module.exports = function(RED) {
 
       var size_kbyte = config.size_kbyte || 0;
       if (size_kbyte < 0) throw new Error("Funny... :(");
+      size_kbyte *= 1000;
 
       var add_cr = config.add_cr ? "\n" : "";
       var total_size = 0;
